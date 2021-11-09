@@ -13,7 +13,7 @@ timestone
 ├── tools               # misc build tools
 ```
 
-## Compile Timestone
+## How to configure, build, and clean
 ```{.sh}
 cd timestone/
 make
