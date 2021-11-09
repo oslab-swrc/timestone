@@ -1,5 +1,8 @@
-# Durable Transactional Memory Can Scale with Timestone (ASPLOS-2020, NVMW-2020)
-===================================================
+# TimeStone (Durable Transactional Memory Can Scale with Timestone)
+
+TimeStone is a highly scalable DTM system with low write amplification and minimal memory footprint. TimeStone uses a novel multi-layered hybrid logging technique, called TOC logging, to guarantee crash consistency. Also, TimeStone further relies on Multi-Version Concurrency Control (MVCC) mechanism to achieve high scalability and to support different isolation levels on the same data set.
+
+All Timestone source codes are provided under the terms of Apache 2.0 License, except ```lib-nv-jemalloc``` which provided under BSD-2-Clause. 
 
 ## Directory structure
 ```{.sh}
@@ -41,6 +44,7 @@ sudo ./ut-ts --gtest_filter=cpp.btree_concurrent
 Please contact us at madhavakrishnan@vt.edu and changwoo@vt.edu
 
 ## Citation
+https://dl.acm.org/doi/abs/10.1145/3373376.3378483
 ```
 @inproceedings{krishnan:timestone,
 author = {Krishnan, R. Madhava and Kim, Jaeho and Mathew, Ajit and Fu, Xinwei
